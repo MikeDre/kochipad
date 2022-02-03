@@ -1,4 +1,4 @@
-# KochiPad
+<img src="https://i.imgur.com/dr1UMub.png" alt="KochiPad" width="200">
 
 ## 📚 Docs
 
