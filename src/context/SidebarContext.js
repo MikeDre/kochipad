@@ -19,8 +19,8 @@ export const SidebarProvider = ({ children }) => {
       isSidebarOpen,
       toggleSidebar,
       closeSidebar,
-    }),
-    [isSidebarOpen, toggleSidebar]
+    }), // eslint-disable-next-line
+    [toggleSidebar]
   )
 
   return <SidebarContext.Provider value={value}>{children}</SidebarContext.Provider>
