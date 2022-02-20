@@ -39,12 +39,12 @@ function SidebarSubmenu({ route }) {
         leaveTo="opacity-0 max-h-0"
       >
         <ul
-          className="p-2 mt-2 space-y-2 overflow-hidden text-md font-medium text-gray-500 rounded-md shadow-inner bg-gray-50 dark:text-gray-200 dark:bg-gray-900"
+          className="p-2 mt-2 space-y-2 overflow-hidden text-md font-medium text-gray-200 rounded-md shadow-inner bg-gray-50 dark:text-gray-200 dark:bg-gray-900"
           aria-label="submenu"
         >
           {route.routes.map((r) => (
             <li
-              className="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
+              className="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-k-orange"
               key={r.name}
             >
               <Link className="w-full" to={r.path}>

@@ -6,17 +6,17 @@ import response from '../utils/demo/tableData'
 
 
 function Dashboard() {
-  const [page, setPage] = useState(1)
+  const [page] = useState(1)
   const [data, setData] = useState([])
 
   // pagination setup
   const resultsPerPage = 10
-  const totalResults = response.length
+  // const totalResults = response.length
 
   // pagination change control
-  function onPageChange(p) {
-    setPage(p)
-  }
+  // function onPageChange(p) {
+  //   setPage(p)
+  // }
 
   // on page change, load new sliced data
   // here you would make another server request for new data

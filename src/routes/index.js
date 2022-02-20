@@ -4,6 +4,8 @@ import { lazy } from 'react'
 const Dashboard = lazy(() => import('../pages/Dashboard'))
 const Forms = lazy(() => import('../pages/Forms'))
 const Cards = lazy(() => import('../pages/Cards'))
+const LaunchPresale = lazy(() => import('../pages/LaunchPresale'))
+const BrowsePresales = lazy(() => import('../pages/BrowsePresales'))
 const Charts = lazy(() => import('../pages/Charts'))
 const Buttons = lazy(() => import('../pages/Buttons'))
 const Modals = lazy(() => import('../pages/Modals'))
@@ -23,7 +25,7 @@ const Blank = lazy(() => import('../pages/Blank'))
  */
 const routes = [
   {
-    path: '/dashboard', // the url
+    path: '/', // the url
     component: Dashboard, // view rendered
   },
   {
@@ -33,6 +35,14 @@ const routes = [
   {
     path: '/cards',
     component: Cards,
+  },
+  {
+    path: '/launch-presale',
+    component: LaunchPresale,
+  },
+  {
+    path: '/browse-presales',
+    component: BrowsePresales,
   },
   {
     path: '/charts',

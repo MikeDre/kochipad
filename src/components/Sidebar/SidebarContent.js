@@ -3,7 +3,6 @@ import routes from '../../routes/sidebar'
 import { NavLink, Route } from 'react-router-dom'
 import * as Icons from '../../icons'
 import SidebarSubmenu from './SidebarSubmenu'
-import { Button } from '@windmill/react-ui'
 import logo from '../../../src/assets/img/kochiken-logo.svg';
 
 function Icon({ icon, ...props }) {
@@ -13,7 +12,7 @@ function Icon({ icon, ...props }) {
 
 function SidebarContent() {
   return (
-    <div className="py-4 text-gray-500 dark:text-gray-200">
+    <div className="py-4 text-gray-700 dark:text-gray-200">
       <a className="text-lg font-bold text-gray-800 dark:text-gray-200" href="/">
         <img src={logo} alt="KochiKen Logo" width="100" className="ml-6 hidden lg:block"/>
       </a>

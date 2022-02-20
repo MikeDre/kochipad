@@ -1,5 +1,5 @@
 import React, { useContext, Suspense, useEffect, lazy } from 'react'
-import { Switch, Route, Redirect, useLocation } from 'react-router-dom'
+import { Switch, Route, useLocation } from 'react-router-dom'
 import routes from '../routes'
 
 import Sidebar from '../components/Sidebar'
@@ -34,12 +34,11 @@ function Layout() {
                   <Route
                     key={i}
                     exact={true}
-                    path={`/app${route.path}`}
+                    path={`${route.path}`}
                     render={(props) => <route.component {...props} />}
                   />
                 ) : null
               })}
-              <Redirect exact from="/app" to="/app/dashboard" />
               <Route component={Page404} />
             </Switch>
           </Suspense>
