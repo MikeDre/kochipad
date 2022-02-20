@@ -12,19 +12,23 @@ const routes = [
     name: 'Dashboard', // name that appear in Sidebar
   },
   {
-    path: '#',
-    icon: 'FormsIcon',
-    name: 'Launchpads',
+    icon: 'ChartsIcon',
+    name: 'Presales',
+    routes: [
+      {
+        path: '#',
+        name: 'Launch presale',
+      },
+      {
+        path: '#',
+        name: 'Browse Presales',
+      }
+    ],
   },
   {
     path: '#',
     icon: 'CardsIcon',
     name: 'Airdrop',
-  },
-  {
-    path: '#',
-    icon: 'ChartsIcon',
-    name: 'Incubator',
   },
   {
     path: '#',
@@ -34,40 +38,13 @@ const routes = [
   {
     path: '#',
     icon: 'ModalsIcon',
-    name: 'Ecosystem',
+    name: 'Staking',
   },
   {
     path: '#',
     icon: 'TablesIcon',
     name: 'Documentation',
-  },
-  {
-    icon: 'PagesIcon',
-    name: 'Dropdown Example',
-    routes: [
-      // submenu
-      {
-        path: '#',
-        name: 'Page',
-      },
-      {
-        path: '#',
-        name: 'Page',
-      },
-      {
-        path: '#',
-        name: 'Page',
-      },
-      {
-        path: '/app/404',
-        name: '404',
-      },
-      {
-        path: '/app/blank',
-        name: 'Blank',
-      },
-    ],
-  },
+  }
 ]
 
 export default routes

@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react'
 import { SidebarContext } from '../context/SidebarContext'
-import logo from '../assets/img/kochiken-logo.png';
+import logo from '../assets/img/kochiken-logo.svg';
 import {
   MoonIcon,
   SunIcon,

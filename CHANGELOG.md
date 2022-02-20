@@ -91,7 +91,7 @@ module.exports = windmill({
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter', ...defaultTheme.fontFamily.sans],
+        sans: ['Jura', ...defaultTheme.fontFamily.sans],
       },
     },
   },
