@@ -5,7 +5,7 @@ function PresaleCard({ image, status, projectID, title, ethValue, value, softHar
     <div className="min-w-0 rounded-lg shadow-xs overflow-hidden bg-white dark:bg-gray-800 border border-gray-600 p-5">
       <div className="">
         <div>
-          <div className="grid gap-6 mb-5 md:grid-cols-2">
+          <div className="grid gap-6 mb-5 grid-cols-2">
             <img src={image} alt={title} className="rounded-full border-2 border-white" width="75" />
             <div className="text-right">
               <div className="text-gray-500 dark:text-gray-400 mb-2">{projectID}</div>
@@ -17,7 +17,7 @@ function PresaleCard({ image, status, projectID, title, ethValue, value, softHar
               <h3 className="text-xl font-medium text-gray-900 dark:text-white">{title}</h3>
               <span className="text-l font-medium text-gray-700 dark:text-gray-200">{ethValue}</span>
             </div>
-            <div className="grid gap-6 mb-5 md:grid-cols-2">
+            <div className="grid gap-6 mb-5 grid-cols-2">
               <div>
                 <span className="text-gray-500 block dark:text-gray-200">Soft/Hard</span>
                 <span className="text-k-orange mb-2 text-2xl">{softHard}</span>
@@ -32,7 +32,7 @@ function PresaleCard({ image, status, projectID, title, ethValue, value, softHar
               <div class="w-full bg-gray-600 rounded-full my-4">
                 <div class="bg-k-orange text-xs text-blue-100 text-center p-1 font-bold leading-none rounded-l-full" style={{ width: `${progress}%` }}> {progress}%</div>
               </div>
-              <div className="grid md:grid-cols-2">
+              <div className="grid grid-cols-2">
                 <div>
                   <span className="text-gray-500 block dark:text-gray-200">0 ETH</span>
                 </div>
@@ -41,7 +41,7 @@ function PresaleCard({ image, status, projectID, title, ethValue, value, softHar
                 </div>
               </div>
             </div>
-            <div className="grid gap-6 mb-5 md:grid-cols-2">
+            <div className="grid gap-6 mb-5 grid-cols-2">
               <div>
                 <span className="text-gray-500 block dark:text-gray-200">Liquidity %:</span>
                 <span className="text-gray-500 block dark:text-gray-200">Lockup Time:</span>
