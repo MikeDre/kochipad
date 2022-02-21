@@ -1,7 +1,12 @@
 import React from 'react'
 
 import PageTitle from '../components/Typography/PageTitle'
+import PresaleCard from '../components/Presale/PresaleCard'
 import { Card, CardBody, Label, Select, Input } from '@windmill/react-ui'
+
+import Wolf from '../assets/img/wolf.jpg';
+import Catoshi from '../assets/img/catoshi.svg';
+import Kochi from '../assets/img/kochi/kochi-1.svg';
 
 import { SearchIcon } from '../icons'
 
@@ -15,10 +20,9 @@ function BrowsePresale() {
       <div className="grid gap-6 mb-8 md:grid-cols-5">
         <div className="col-span-3">
           <Label className="mt-4">
-            <span>Icon left</span>
-            {/* <!-- focus-within sets the color for the icon when input is focused --> */}
+            <span>Search presales</span>
             <div className="relative text-gray-500 focus-within:text-purple-600 dark:focus-within:text-purple-400">
-              <input
+              <Input
                 className="block w-full pl-10 mt-1 text-sm text-black dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray form-input"
                 placeholder="Jane Doe"
               />
@@ -57,27 +61,45 @@ function BrowsePresale() {
       </div>
 
       <div className="grid gap-6 mb-8 md:grid-cols-3">
-        <Card>
-          <CardBody>
-            <p className="mb-4 font-semibold text-gray-600 dark:text-gray-300">Revenue</p>
-            <p className="text-gray-600 dark:text-gray-400">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga, cum commodi a omnis
-              numquam quod? Totam exercitationem quos hic ipsam at qui cum numquam, sed amet
-              ratione! Ratione, nihil dolorum.
-            </p>
-          </CardBody>
-        </Card>
-
-        <Card colored className="text-white bg-purple-600">
-          <CardBody>
-            <p className="mb-4 font-semibold">Colored card</p>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga, cum commodi a omnis
-              numquam quod? Totam exercitationem quos hic ipsam at qui cum numquam, sed amet
-              ratione! Ratione, nihil dolorum.
-            </p>
-          </CardBody>
-        </Card>
+        <PresaleCard
+          image={Catoshi}
+          status="In progress"
+          projectID="KOCH43218"
+          title="Catoshi"
+          ethValue="1 ETH = 6,000,000,000,000"
+          softHard="3 ETH"
+          cap="6 ETH"
+          progress="75"
+          liquidity="100"
+          lockupTime="365"
+          url="/presales/catoshi"
+        />
+        <PresaleCard
+          image={Wolf}
+          status="In progress"
+          projectID="KOCH2118"
+          title="SaitaMAX"
+          ethValue="1 ETH = 1,000,000,000,000"
+          softHard="3 ETH"
+          cap="6 ETH"
+          progress="20"
+          liquidity="100"
+          lockupTime="365"
+          url="/presales/wolfmax"
+        />
+        <PresaleCard
+          image={Kochi}
+          status="In progress"
+          projectID="KOCH35715"
+          title="KochiKen"
+          ethValue="1 ETH = 14,000,000,000,000"
+          softHard="3 ETH"
+          cap="6 ETH"
+          progress="97"
+          liquidity="100"
+          lockupTime="365"
+          url="/presales/kochiken"
+        />
       </div>
     </>
   )
