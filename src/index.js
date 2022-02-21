@@ -16,7 +16,7 @@ import kochipadTheme from './kochipadTheme.js'
 ReactDOM.render(
   <SidebarProvider>
     <Suspense fallback={<ThemedSuspense />}>
-      <Windmill usePreferences theme={kochipadTheme}>
+      <Windmill usePreferences dark theme={kochipadTheme}>
         <App />
       </Windmill>
     </Suspense>
