@@ -2,7 +2,7 @@ import React from 'react'
 
 import PageTitle from '../components/Typography/PageTitle'
 import PresaleCard from '../components/Presale/PresaleCard'
-import { Card, CardBody, Label, Select, Input } from '@windmill/react-ui'
+import { Label, Select, Input } from '@windmill/react-ui'
 
 import Wolf from '../assets/img/wolf.jpg';
 import Catoshi from '../assets/img/catoshi.svg';
@@ -38,6 +38,7 @@ function BrowsePresale() {
             <Select className="mt-1">
               <option>All presales</option>
               <option>KYC</option>
+              <option>Chain</option>
               <option>Upcoming</option>
               <option>In progress</option>
               <option>Filled</option>

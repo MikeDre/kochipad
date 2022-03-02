@@ -26,9 +26,14 @@ const routes = [
     ],
   },
   {
-    path: '#',
     icon: 'CardsIcon',
-    name: 'Airdrop',
+    name: 'Airdrops',
+    routes: [
+      {
+        path: '/create-airdrop',
+        name: 'Create Airdrop',
+      }
+    ],
   },
   {
     path: '#',
