@@ -37,11 +37,6 @@ const routes = [
   },
   {
     path: '#',
-    icon: 'ButtonsIcon',
-    name: 'Past Projects Performance',
-  },
-  {
-    path: '#',
     icon: 'ModalsIcon',
     name: 'Staking',
   },

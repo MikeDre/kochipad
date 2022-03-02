@@ -54,6 +54,7 @@ function LaunchPresale() {
                     className="block w-full mt-1 text-sm text-black dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray form-input"
                     placeholder="Token Supply"
                     type="file"
+                    accept=".csv"
                   />
                 </div>
               </Label>
