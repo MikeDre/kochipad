@@ -1,4 +1,5 @@
 import React from 'react'
+import { Button } from '@windmill/react-ui'
 
 function PresaleCard({ image, status, projectID, title, ethValue, value, softHard, cap, progress, liquidity, lockupTime, url }) {
   return (
@@ -50,6 +51,11 @@ function PresaleCard({ image, status, projectID, title, ethValue, value, softHar
                 <span className="text-gray-500 block dark:text-gray-200">{liquidity}</span>
                 <span className="text-gray-500 block dark:text-gray-200">{lockupTime}</span>
               </div>
+            </div>
+            <div className="mt-4 mb-2 text-right">
+              <a href={url}>
+                <Button className="font-bold mt-4 text-lg">View pool</Button>
+              </a>
             </div>
           </div>
         </div>

@@ -12,4 +12,10 @@
     font-family: 'Russo One', 'Jura', system-ui, sans-serif;
     letter-spacing: 1px;
   }
+
+  .presale__value-label {
+    font-weight: 700 !important;
+    min-width: 150px;
+    text-align: center;
+  }
 }

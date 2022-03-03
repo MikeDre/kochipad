@@ -7,6 +7,7 @@ const Cards = lazy(() => import('../pages/Cards'))
 const LaunchPresale = lazy(() => import('../pages/LaunchPresale'))
 const BrowsePresales = lazy(() => import('../pages/BrowsePresales'))
 const CreateAirdrop = lazy(() => import('../pages/CreateAirdrop'))
+const ExamplePresale = lazy(() => import('../pages/ExamplePresale'))
 const Charts = lazy(() => import('../pages/Charts'))
 const Buttons = lazy(() => import('../pages/Buttons'))
 const Modals = lazy(() => import('../pages/Modals'))
@@ -48,6 +49,10 @@ const routes = [
   {
     path: '/create-airdrop',
     component: CreateAirdrop,
+  },
+  {
+    path: '/presale/catoshi',
+    component: ExamplePresale,
   },
   {
     path: '/charts',

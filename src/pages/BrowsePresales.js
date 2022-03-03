@@ -73,7 +73,7 @@ function BrowsePresale() {
           progress="75"
           liquidity="100"
           lockupTime="365"
-          url="/presales/catoshi"
+          url="/presale/catoshi"
         />
         <PresaleCard
           image={Wolf}
@@ -86,7 +86,7 @@ function BrowsePresale() {
           progress="20"
           liquidity="100"
           lockupTime="365"
-          url="/presales/wolfmax"
+          url="/presale/catoshi"
         />
         <PresaleCard
           image={Kochi}
@@ -99,7 +99,7 @@ function BrowsePresale() {
           progress="97"
           liquidity="100"
           lockupTime="365"
-          url="/presales/kochiken"
+          url="/presale/catoshi"
         />
       </div>
     </>

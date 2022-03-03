@@ -70,7 +70,7 @@ function LaunchPresale() {
             </Label>
 
             <div className="mt-6 mb-2">
-                <Button className="font-bold mt-4 text-lg">Submit</Button>
+              <Button className="font-bold mt-4 text-lg">Submit</Button>
             </div>
           </CardBody>
         </Card>
