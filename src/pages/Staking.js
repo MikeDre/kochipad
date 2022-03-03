@@ -1,7 +1,6 @@
 import React from 'react'
 
 import PageTitle from '../components/Typography/PageTitle'
-import PresaleCard from '../components/Presale/PresaleCard'
 import { Label, Input, Card, CardBody, Button } from '@windmill/react-ui'
 
 function BrowsePresale() {
@@ -24,7 +23,7 @@ function BrowsePresale() {
             <Label className="mt-4">
               <div className="text-lg text-gray-600 dark:text-white pb-2">Total Balance</div>
               <div className="relative text-gray-500 focus-within:text-purple-600">
-                <input
+                <Input
                   className="block w-full pr-20 mt-1 text-sm text-black dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray form-input"
                   placeholder="0.00"
                 />
@@ -36,7 +35,7 @@ function BrowsePresale() {
 
             <Label className="mt-3">
               <div className="relative">
-                <input
+                <Input
                   className="block w-full mt-1 text-md dark:text-k-orange dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray form-input"
                   placeholder="0.00"
                 />
@@ -57,7 +56,7 @@ function BrowsePresale() {
             <Label className="mt-4">
               <div className="text-lg text-gray-600 dark:text-white pb-2">Total Staked Balance</div>
               <div className="relative text-gray-500 focus-within:text-purple-600">
-                <input
+                <Input
                   className="block w-full mt-1 text-md dark:text-k-orange dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray form-input"
                   placeholder="0.00"
                 />
@@ -66,7 +65,7 @@ function BrowsePresale() {
 
             <Label className="mt-3">
               <div className="relative">
-                <input
+                <Input
                   className="block w-full mt-1 text-md dark:text-k-orange dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray form-input"
                   placeholder="0.00% - Pool Percentage"
                 />
@@ -87,7 +86,7 @@ function BrowsePresale() {
             <Label className="mt-4">
               <div className="text-lg text-gray-600 dark:text-white pb-2">Daily Rewards</div>
               <div className="relative text-gray-500 focus-within:text-purple-600">
-                <input
+                <Input
                   className="block w-full mt-1 text-md dark:text-k-orange dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray form-input"
                   placeholder="0.00"
                 />
@@ -96,7 +95,7 @@ function BrowsePresale() {
 
             <Label className="mt-3">
               <div className="relative">
-                <input
+                <Input
                   className="block w-full mt-1 text-md dark:text-k-orange dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray form-input"
                   placeholder="0.00"
                 />
