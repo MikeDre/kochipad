@@ -36,7 +36,7 @@ const routes = [
     ],
   },
   {
-    path: '#',
+    path: '/staking',
     icon: 'ModalsIcon',
     name: 'Staking',
   },

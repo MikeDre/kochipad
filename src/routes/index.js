@@ -8,6 +8,7 @@ const LaunchPresale = lazy(() => import('../pages/LaunchPresale'))
 const BrowsePresales = lazy(() => import('../pages/BrowsePresales'))
 const CreateAirdrop = lazy(() => import('../pages/CreateAirdrop'))
 const ExamplePresale = lazy(() => import('../pages/ExamplePresale'))
+const Staking = lazy(() => import('../pages/Staking'))
 const Charts = lazy(() => import('../pages/Charts'))
 const Buttons = lazy(() => import('../pages/Buttons'))
 const Modals = lazy(() => import('../pages/Modals'))
@@ -53,6 +54,10 @@ const routes = [
   {
     path: '/presale/catoshi',
     component: ExamplePresale,
+  },
+  {
+    path: '/staking',
+    component: Staking,
   },
   {
     path: '/charts',
