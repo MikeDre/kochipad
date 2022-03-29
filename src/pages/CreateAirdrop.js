@@ -17,7 +17,7 @@ function LaunchPresale() {
           </div>
 
           <Card>
-            <CardBody class="min-w-0 rounded-lg shadow-xs overflow-hidden bg-white dark:bg-gray-800 border border-gray-600 p-5">
+            <CardBody className="min-w-0 rounded-lg shadow-xs overflow-hidden bg-white dark:bg-gray-800 border border-gray-600 p-5">
               <Label className="mt-4 max-w-sm">
                   <span>Select Chain</span>
                   <Select className="mt-1">

@@ -13,7 +13,7 @@ function ExamplePresale() {
 
       <div className="grid gap-6 mt-8 mb-8 md:grid-cols-3">
         <Card className="col-span-2">
-          <CardBody class="min-w-0 rounded-lg shadow-xs overflow-hidden bg-white dark:bg-gray-800 border border-gray-600 p-5">
+          <CardBody className="min-w-0 rounded-lg shadow-xs overflow-hidden bg-white dark:bg-gray-800 border border-gray-600 p-5">
             <div className="grid gap-6 mt-4 mb-5 grid-cols-3">
               <div className="col-span-2 flex">
                 <img src={TokenImage} alt="" className="mr-6 inline-block rounded-full border-2 border-white" width="75" />
@@ -96,23 +96,7 @@ function ExamplePresale() {
             </Label>
             {/* <!-- Token Decimals	 --> */}
 
-            {/* <!-- Presale Address --> */}
-            <Label className="mt-3">
-              <div className="relative">
-                <input
-                  disabled
-                  className="text-right block w-full pl-20 mt-1 text-md dark:text-k-orange dark:border-gray-600 dark:bg-gray-700 focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray form-input"
-                  placeholder=""
-                  value="0xB4c08d26FF8B1eD4f51511C12863331A9A9De880"
-                />
-                <div className="presale__value-label absolute inset-y-0 px-4 pt-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-gray-600 border border-transparent rounded-l-md">
-                  Presale Address			
-                </div>
-              </div>
-            </Label>
-            {/* <!-- Presale Address --> */}
-
-            {/* <!-- Total Supply --> */}
+            {/* <!-- Token Supply --> */}
             <Label className="mt-3">
               <div className="relative">
                 <input
@@ -122,11 +106,11 @@ function ExamplePresale() {
                   value="100,000,000,000"
                 />
                 <div className="presale__value-label absolute inset-y-0 px-4 pt-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-gray-600 border border-transparent rounded-l-md">
-                  Total Supply			
+                  Token Supply			
                 </div>
               </div>
             </Label>
-            {/* <!-- Total Supply --> */}
+            {/* <!-- Token Supply --> */}
 
             {/* <!-- Presale Tokens --> */}
             <Label className="mt-3">
@@ -228,11 +212,11 @@ function ExamplePresale() {
         </Card>
         <div>
           <Card className="col-span-1">
-            <CardBody class="min-w-0 rounded-lg shadow-xs overflow-hidden bg-white dark:bg-gray-800 border border-gray-600 p-5">
+            <CardBody className="min-w-0 rounded-lg shadow-xs overflow-hidden bg-white dark:bg-gray-800 border border-gray-600 p-5">
               <div className="border-1 rounded-lg">
                 <span className="text-white">Progress (20%)</span>
-                <div class="w-full bg-gray-600 rounded-full my-4">
-                  <div class="bg-k-orange text-xs text-blue-100 text-center p-1 font-bold leading-none rounded-l-full" style={{ width: `${20}%` }}> 20%</div>
+                <div className="w-full bg-gray-600 rounded-full my-4">
+                  <div className="bg-k-orange text-xs text-blue-100 text-center p-1 font-bold leading-none rounded-l-full" style={{ width: `${20}%` }}> 20%</div>
                 </div>
                 <div className="grid grid-cols-2">
                   <div>
@@ -247,7 +231,7 @@ function ExamplePresale() {
           </Card>
 
           <Card className="col-span-1 mt-6">
-            <CardBody class="min-w-0 rounded-lg shadow-xs overflow-hidden bg-white dark:bg-gray-800 border border-gray-600 p-5">
+            <CardBody className="min-w-0 rounded-lg shadow-xs overflow-hidden bg-white dark:bg-gray-800 border border-gray-600 p-5">
               <h3 className="text-gray-600 dark:text-white">You are whitelisted!</h3>
               <div className="border-1 rounded-lg">
                 <Label className="mt-4">
@@ -271,23 +255,23 @@ function ExamplePresale() {
           </Card>
 
           <Card className="col-span-1 mt-6">
-            <CardBody class="min-w-0 rounded-lg shadow-xs overflow-hidden bg-white dark:bg-gray-800 border border-gray-600 p-5">
-              <div class="grid gap-6 grid-cols-2">
+            <CardBody className="min-w-0 rounded-lg shadow-xs overflow-hidden bg-white dark:bg-gray-800 border border-gray-600 p-5">
+              <div className="grid gap-6 grid-cols-2">
                 <div>
-                  <span class="text-gray-500 block dark:text-gray-200">Soft/Hard</span>
-                  <span class="text-k-orange mb-2 text-2xl">3 ETH</span>
+                  <span className="text-gray-500 block dark:text-gray-200">Soft/Hard</span>
+                  <span className="text-k-orange mb-2 text-2xl">3 ETH</span>
                 </div>
                 <div>
-                  <span class="text-gray-500 block dark:text-gray-200">Cap</span>
-                  <span class="text-k-orange mb-2 text-2xl">6 ETH</span>
+                  <span className="text-gray-500 block dark:text-gray-200">Cap</span>
+                  <span className="text-k-orange mb-2 text-2xl">6 ETH</span>
                 </div>
                 <div>
-                  <span class="text-gray-500 block dark:text-gray-200">Minimum Buy</span>
-                  <span class="text-k-orange mb-2 text-2xl">0.1 ETH</span>
+                  <span className="text-gray-500 block dark:text-gray-200">Minimum Buy</span>
+                  <span className="text-k-orange mb-2 text-2xl">0.1 ETH</span>
                 </div>
                 <div>
-                  <span class="text-gray-500 block dark:text-gray-200">Maximum Buy</span>
-                  <span class="text-k-orange mb-2 text-2xl">0.5 ETH</span>
+                  <span className="text-gray-500 block dark:text-gray-200">Maximum Buy</span>
+                  <span className="text-k-orange mb-2 text-2xl">0.5 ETH</span>
                 </div>
               </div>
             </CardBody>

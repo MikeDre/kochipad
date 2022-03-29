@@ -30,8 +30,8 @@ function PresaleCard({ image, status, projectID, title, ethValue, value, softHar
             </div>
             <div className="bg-gray-700 border-1 p-4 my-10 rounded-lg">
               <span className="text-white">Progress ({progress}%)</span>
-              <div class="w-full bg-gray-600 rounded-full my-4">
-                <div class="bg-k-orange text-xs text-blue-100 text-center p-1 font-bold leading-none rounded-l-full" style={{ width: `${progress}%` }}> {progress}%</div>
+              <div className="w-full bg-gray-600 rounded-full my-4">
+                <div className="bg-k-orange text-xs text-blue-100 text-center p-1 font-bold leading-none rounded-l-full" style={{ width: `${progress}%` }}> {progress}%</div>
               </div>
               <div className="grid grid-cols-2">
                 <div>
