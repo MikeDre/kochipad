@@ -3,7 +3,7 @@ import { Button } from '@windmill/react-ui'
 
 function PresaleCard({ image, status, projectID, title, ethValue, value, softHard, cap, progress, liquidity, lockupTime, url }) {
   return (
-    <div className="min-w-0 rounded-lg shadow-xs overflow-hidden bg-white dark:bg-gray-800 border border-gray-600 p-5">
+    <div className="presale-card min-w-0 rounded-lg shadow-xs overflow-hidden bg-white dark:bg-gray-800 dark:hover:bg-gray-700 border border-gray-600 p-5">
       <div className="">
         <div>
           <div className="grid gap-6 mb-5 grid-cols-2">
