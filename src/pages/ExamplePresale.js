@@ -3,8 +3,21 @@ import React from 'react'
 import PageTitle from '../components/Typography/PageTitle'
 import { Card, CardBody, Button, Label } from '@windmill/react-ui'
 import TokenImage from '../assets/img/catoshi.svg';
+import web3 from 'web3';
 
 function ExamplePresale() {
+
+  function enterWhitelabelRaffle() {
+
+    // Check if Metamask is installed
+    if (typeof window.ethereum !== 'undefined') {
+      window.ethereum.request({ method: 'eth_requestAccounts' });
+    } else {
+      // Alert user that Metamask is required
+      console.log('MetaMask is not installed');
+    }
+  }
+
   return (
     <>
       <div className="mt-8">
@@ -211,6 +224,14 @@ function ExamplePresale() {
           </CardBody>
         </Card>
         <div>
+          <div className="text-center">
+            <Button
+              className="cursor-not-allowed hover:text-white font-bold text-md mb-6 bg-white text-gray-900"
+              onClick={enterWhitelabelRaffle}
+            >
+                Enter the whitelist raffle
+            </Button>
+          </div>
           <Card className="col-span-1">
             <CardBody className="min-w-0 rounded-lg shadow-xs overflow-hidden bg-white dark:bg-gray-800 border border-gray-600 p-5">
               <div className="border-1 rounded-lg">
