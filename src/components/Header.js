@@ -1,16 +1,16 @@
 import React, { useContext, useState } from 'react'
 import { SidebarContext } from '../context/SidebarContext'
 import logo from '../assets/img/kochiken-logo.svg';
+import MetamaskLogo from '../assets/img/metamask.svg';
 import {
   MoonIcon,
   SunIcon,
-  BellIcon,
   MenuIcon,
   OutlinePersonIcon,
   OutlineCogIcon,
   OutlineLogoutIcon,
 } from '../icons'
-import { Avatar, Badge, Dropdown, DropdownItem, WindmillContext } from '@windmill/react-ui'
+import { Avatar, Dropdown, DropdownItem, WindmillContext } from '@windmill/react-ui'
 
 function Header() {
   const { mode, toggleMode } = useContext(WindmillContext)
@@ -36,7 +36,7 @@ function Header() {
           </a>
         </div>
         <div>
-          <ul className="flex items-center flex-shrink-0 space-x-6">
+          <ul className="flex items-center flex-shrink-0 space-x-2">
             {/* <!-- Theme toggler --> */}
             <li className="flex">
               <button
@@ -49,6 +49,16 @@ function Header() {
                 ) : (
                   <MoonIcon className="w-5 h-5" aria-hidden="true" />
                 )}
+              </button>
+            </li>
+            {/* <!-- Metamask Button --> */}
+            <li>
+              <button className="bg-transparent dark:hover:text-white dark:text-grey-400 font-semibold py-2 px-4 md:border dark:border-grey-500 dark:hover:border-white rounded">
+                <span className="inline-block">
+                  <img src={MetamaskLogo} alt="Metamask" width="20" className="md:inline-block hidden mr-2" />
+                  <img src={MetamaskLogo} alt="Metamask" width="30" className="md:hidden block" />
+                </span>
+                <span className="md:inline-block hidden">Metamask</span>
               </button>
             </li>
             {/* <!-- Profile menu --> */}
@@ -85,8 +95,8 @@ function Header() {
                 </DropdownItem>
               </Dropdown>
             </li>
+            {/* <!-- Mobile hamburger --> */}
             <li>
-              {/* <!-- Mobile hamburger --> */}
               <button
                 className="p-1 mr-5 -ml-1 rounded-md lg:hidden focus:outline-none focus:shadow-outline-purple"
                 onClick={toggleSidebar}
