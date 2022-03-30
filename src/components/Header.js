@@ -1,4 +1,5 @@
 import React, { useContext, useState } from 'react'
+import { connectWallet } from '../WebThree/WebThree'
 import { SidebarContext } from '../context/SidebarContext'
 import logo from '../assets/img/kochiken-logo.svg';
 import MetamaskLogo from '../assets/img/metamask.svg';
@@ -27,6 +28,10 @@ function Header() {
     setIsProfileMenuOpen(!isProfileMenuOpen)
   }
 
+  function handleConnectWallet(){
+    connectWallet()
+  };
+
   return (
     <header className="z-40 py-4 bg-white shadow-bottom dark:bg-gray-800">
       <div className="container flex items-center justify-between h-full px-6 mx-auto text-purple-600 dark:text-purple-300">
@@ -37,14 +42,14 @@ function Header() {
         </div>
         <div>
           <ul className="flex items-center flex-shrink-0 space-x-3">
-            {/* <!-- Metamask Button --> */}
+            {/* <!-- Connect Wallet Button --> */}
             <li>
-              <button className="bg-transparent dark:hover:text-white dark:text-gray-400 font-semibold md:py-2 md:px-4 md:border dark:border-grey-500 dark:hover:border-white rounded mt-1">
+              <button onClick={handleConnectWallet} className="bg-transparent dark:hover:text-white dark:text-gray-400 font-semibold md:py-2 md:px-4 md:border dark:border-grey-500 dark:hover:border-white rounded mt-1">
                 <span className="inline-block">
                   <img src={MetamaskLogo} alt="Metamask" width="20" className="md:inline-block hidden mr-2" />
                   <img src={MetamaskLogo} alt="Metamask" width="25" className="md:hidden block" />
                 </span>
-                <span className="md:inline-block hidden">Metamask</span>
+                <span className="md:inline-block hidden">Connect Wallet</span>
               </button>
             </li>
             {/* <!-- Theme toggler --> */}

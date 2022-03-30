@@ -1,21 +1,14 @@
 import React from 'react'
+import { connectWallet } from '../WebThree/WebThree'
 
 import PageTitle from '../components/Typography/PageTitle'
 import { Card, CardBody, Button, Label } from '@windmill/react-ui'
 import TokenImage from '../assets/img/catoshi.svg';
-import web3 from 'web3';
 
 function ExamplePresale() {
 
-  function enterWhitelabelRaffle() {
-
-    // Check if Metamask is installed
-    if (typeof window.ethereum !== 'undefined') {
-      window.ethereum.request({ method: 'eth_requestAccounts' });
-    } else {
-      // Alert user that Metamask is required
-      console.log('MetaMask is not installed');
-    }
+  function exampleFunction() {
+    connectWallet();
   }
 
   return (
@@ -227,7 +220,7 @@ function ExamplePresale() {
           <div className="text-center">
             <Button
               className="cursor-not-allowed hover:text-white font-bold text-md mb-6 bg-white text-gray-900"
-              onClick={enterWhitelabelRaffle}
+              onClick={exampleFunction}
             >
                 Enter the whitelist raffle
             </Button>
