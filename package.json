@@ -41,7 +41,8 @@
     "react-router-dom": "5.2.0",
     "react-scripts": "3.4.1",
     "react-transition-group": "4.4.1",
-    "web3": "^1.7.1"
+    "web3": "^1.7.1",
+    "web3modal": "^1.9.5"
   },
   "devDependencies": {
     "@release-it/conventional-changelog": "1.1.4",
